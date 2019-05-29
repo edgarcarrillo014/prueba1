@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family:13px;
+    padding-top: 55px;
+}
+header{
+    background: #804000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.menu .logo{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 19px;
+}
+.menu .btn-menu{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu .logo:hover{
+    background: #804000;
+   
+}
+
+.menu .enlaces{
+    display: inline-block;
+     
+}
+
+.menu .enlaces a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+.menu .enlaces i{
+    margin-right: 5px;
+}
+
+.menu .enlaces a:hover{
+    background: #f2f2f2;
+    color: #804000;
+}
+
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+}
+
+main article h1{
+    font-weight: normal;
+    margin-bottom: .5em;
+    
+    
+}
+main article hr{
+    margin-bottom: 1em;
+    height: 2px;
+    background: #804000;
+    border: none;
+}
+
+main article p{
+    margin-bottom: 1em;
+    
+}
+
+
+/*efecto de menu*/
+.headroom{
+    transition: transform .3s ease;
+    
+}
+
+.headroom--pinned{
+    transform: translateY(0%);
+    
+}
+.headroom--unpinned{
+    transform: translateY(-100%);
+    
+}
+
+
+
+/*mediaqueries*/
+@media screen and (max-width:700px) {
+    header .menu{
+        flex-direction: column;
+    }
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+        }
+    header .menu .logo .btn-menu{
+        display: inline-block;
+        
+    }
+    
+    header .menu .enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around; 
+    }
+    
+}
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 100;
+    display: flex;
+    width: 400%;
+   
+    
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+    
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+     border: black 2px solid;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+   
+}
+
+
+.contenedor{
+    width: 100%;
+    
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+        
+}
+
+
+header nav ul li .children{
+   display: none;
+    background: #804000;
+    position: absolute;
+    z-index: 1000;
+}
+
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    
+}
+header nav ul li .children li a{
+    display: block;
+    margin:5px;
+    position: relative;
+        
+}
+
+header nav{
+    display: block;
+    position: relative;
+    left: 0;
+    
+}
+
+p{
+   text-align: justify;
+   margin: 1%;
+}
+
+h1{
+    margin: 1%;
+}
+
+.parte2{
+    margin: 3%;
+    
+}
+.guia{
+    
+}
+
+.centro{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
